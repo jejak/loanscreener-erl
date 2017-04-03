@@ -1,3 +1,11 @@
+%%%-------------------------------------------------------------------
+%%% @copyright (C) 2017, Jeno Jakab
+%%% @doc
+%%%  Loan screener API and implementation
+%%% @end
+%%% @contributors
+%%%  Jeno Jakab
+%%%-------------------------------------------------------------------
 -module(loanscreener).
 
 -export([load_data/1]).
@@ -59,10 +67,7 @@ create_report(LoansAlerts) ->
   end
   .
 
-%% -------------
-%% Internals
-%% -------------
-
+% Internals
 -spec receive_data(pid(), string(), url()) -> any().
 receive_data(Pid, TypeStr, Url) ->
   receive

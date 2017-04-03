@@ -37,9 +37,7 @@ main(Argv) ->
   run_screener(Argv),
   erlang:halt(0).
 
-%%====================================================================
-%% Internal functions
-%%====================================================================
+% Internals
 -spec usage() -> no_return().
 usage() ->
   usage(standard_io).
