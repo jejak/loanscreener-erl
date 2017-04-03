@@ -50,7 +50,7 @@ loanscreen_test_() ->
         "Two loans two positions are not eligible by cp currency and threshold - should return one loan alert",
         fun() ->
           Md = md(),
-          NewMd = lists:sublist(Md, 2) ++ [maps:put(<<"currency">>, <<"EUR">>, lists:nth(1, Md))],
+          NewMd = lists:sublist(Md, 2) ++ [maps:put(<<"currency">>, <<"EUR">>, lists:nth(3, Md))],
           Ld = ld(),
           NewLd = [maps:put(<<"amount">>, 480023, lists:nth(1, Ld))] ++ lists:nthtail(1, Ld),
           setup_stubs(NewMd, NewLd, cp()),
