@@ -1,0 +1,21 @@
+{application, loanscreener_cli  ,
+ [{description, "Loan Screener CLI"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    jsx
+   ]},
+  {env,[]},
+  {modules, [
+    loanscreener_cli,
+    loanscreener,
+    jsonreader,
+    util
+  ]},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
