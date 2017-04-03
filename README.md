@@ -25,9 +25,9 @@ The program
 **Example output**
 
 ````````````````````
-$ ruby -Ilib bin/loan-screener http://ws.jenojakab.com/files/marketdata.json \
-              http://ws.jenojakab.com/files/loandata.json \
-              http://ws.jenojakab.com/files/creditpolicy.json
+$ loanscreener <url-of-marketdata-json> \
+               <url-of-loandata-json> \
+               <url-of-creditpolicy-json>
 
 [
   {
